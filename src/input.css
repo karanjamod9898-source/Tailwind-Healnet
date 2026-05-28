@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .main-btn {
+        @apply bg-gradient-to-br from-blue-light to-blue text-white w-full md:w-auto px-5 py-3 rounded-lg font-bold space-x-3 
+        hover:from-blue hover:to-blue-dark;
+    }
+    .container-section {
+        @apply max-w-container mx-auto px-4 my-10
+    }
+    .secondary-btn{
+        @apply bg-blue text-white py-2 rounded-lg mt-4;
+    }
+
+    /*=========================================================================== Navbar-Section ===========*/
+
+    .nav-section {
+        @apply max-w-container mx-auto flex items-center justify-between px-4 py-4 gap-4
+    }
+    .nav-menu {
+        @apply hidden lg:flex gap-8 text-lg
+    }
+    .nav-menu-link {
+        @apply hover:text-primary
+    }
+    .mobile-menu {
+        transition: all 0.3s ease-in-out
+    }
+    .mobile-size{
+        @apply fixed top-0 right-nav w-mobile-menu h-full bg-white z-50 p-6 mobile-menu
+    }
+
+    /*=========================================================================== Hearo-Section ===========*/
+
+    .hero-section {
+        @apply max-w-container mx-auto px-4 lg:py-8 pb-8 grid lg:grid-cols-2 lg:gap-10 gap-2 items-center
+    }
+    .left-section {
+        @apply text-center lg:text-left 
+    }
+    .main-text {
+        @apply text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight text-light-black
+    }
+    .main-detail {
+        @apply text-secondary w-full lg:max-w-90pc my-4 lg:my-8 text-sm lg:text-base
+    }
+    .main-span {
+        @apply text-light-black font-semibold
+    }
+    .main-logos-images {
+        @apply flex flex-row w-full items-center gap-3 my-4 justify-center lg:justify-normal
+    }
+    .main-logos {
+        @apply text-3xl text-secondary hover:text-light-black
+    }
+
+    /*=========================================================================== -- appointment-section -- ===========*/
+
+    .appoin-vector{
+        @apply absolute hidden lg:block -z-10 -left-8 -bottom-10
+    } 
+    .appointment-section {
+        @apply max-w-container mx-auto px-4
+    }
+    .appointment-contact {
+        @apply border-2 border-blue-light rounded-3xl p-6 md:p-10 shadow-md my-6 bg-blue-extra-light
+    }
+    .appointment-h1{
+        @apply text-primary text-2xl md:text-3xl font-semibold;
+    }
+    .appoin-input{
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 items-end
+    }
+    .appoin-p{
+        @apply text-light-black text-sm flex items-center gap-2
+    }
+    .appoin-i{
+        @apply text-blue text-lg
+    }
+    .input-class {
+        @apply border border-blue px-5 py-3 rounded-xl focus:outline-none focus:ring-blue focus:ring-2
+    }
+
+    /*=========================================================================== -- Services-Section -- ===========*/
+
+    .services-class{
+        @apply container-section
+    }
+    .services-title{
+        @apply text-light-black text-center justify-center mx-auto
+    }
+    .title-text{
+        @apply text-4xl font-semibold text-light-black
+    }
+    .title-p{
+        @apply text-secondary-light w-full lg:max-w-58pc mx-auto my-4 lg:my-8 text-sm lg:text-base
+    }
+    .services-details{
+        @apply max-w-1200 mx-auto
+    }
+    .services-h1{
+        @apply text-2xl text-primary font-semibold my-4;
+    }
+    .services-card{
+        @apply col-span-10 md:col-span-7 border-2 p-6 border-blue-light shadow-lg rounded-2xl hover:scale-105 transition duration-300 hover:bg-blue-extra-light
+    }
+    .services-vector{
+        @apply absolute w-32 -top-11 -left-10 hidden lg:block;
+    }               
+    .services-p{
+        @apply text-sm text-secondary;
+    }
+
+    /*=========================================================================== -- About-Us-Class -- ===========*/
+
+    .aboutus-class{
+        @apply max-w-container mx-auto px-4 my-12
+    }
+    .about-h1{
+        @apply text-center text-primary text-4xl font-semibold;
+    }
+    .aboutus-story{
+        @apply border-2 border-blue-light rounded-3xl p-6 md:p-10 shadow-lg my-6
+    }
+    .about-left{
+        @apply border-2 border-blue-light rounded-3xl overflow-hidden object-contain   
+    }
+    .about-right{
+        @apply w-full lg:max-w-550 text-sm md:text-xl text-secondary
+    }
+    .aboutus-vector{
+        @apply absolute w-32 right-12 hidden lg:block;
+    }
+
+    /*=========================================================================== -- Platform-Class -- ===========*/
+
+    .platform-class{
+        @apply container-section
+    }
+    .platform-title{
+        @apply w-full lg:max-w-58pc mx-auto my-4 lg:my-8 text-sm lg:text-base text-center
+    }
+    .platform-main{
+        @apply max-w-1100 mx-auto
+    }
+    .platform-flex{
+        @apply flex flex-col sm:flex-row gap-4 items-start;
+    }
+    .platform-num{
+        @apply w-10 h-10 text-2xl flex items-center justify-center rounded-full text-white font-semibold shrink-0
+                bg-gradient-to-br from-blue-extra-light to-blue
+    }
+    .platform-heading{
+        @apply lg:text-3xl text-lg font-semibold text-light-black;
+    }
+    .platform-p{
+        @apply text-secondary text-sm lg:text-base mt-1 md:mt-0;
+    }
+
+    /*=========================================================================== -- Testimonials-Class -- ===========*/
+
+    .testimonials-class{
+        @apply container-section overflow-hidden;
+    }
+    .testimonials-title{
+        @apply text-center justify-center mx-auto
+    }
+    .testimonials-details{
+        @apply max-w-1200 mx-auto py-4 lg:pb-14
+    }
+    .testimo-cards{
+        @apply grid lg:grid-cols-2 grid-cols-1 lg:gap-16 items-center gap-5
+    }
+    .testimonials-leader{
+        @apply border-2 border-blue-light rounded-3xl p-6 md:p-10 shadow-lg bg-blue-extra-light
+    }
+    .testimonials-card{
+        @apply flex flex-col sm:flex-row gap-4 items-start sm:items-center
+    }
+    .testimonials-card-img{
+        @apply max-w-28 rounded-3xl border-2 border-blue
+    }
+    .testimonials-img-left{
+        @apply absolute -z-10 md:-left-16 md:-top-16 hidden lg:block
+    }
+    .testimonials-img-right{
+        @apply absolute -z-10 md:-right-16 md:-bottom-16 hidden lg:block
+    }
+
+    /*=========================================================================== -- Team-Class -- ===========*/
+    
+
+    .team-class{
+        @apply max-w-5xl mx-auto px-4 my-10
+    }
+    .team-title{
+        @apply text-center justify-center mx-auto
+    }
+    .team-h1{
+        @apply text-4xl font-semibold text-light-black
+    }
+    .team-p{
+        @apply max-w-4xl w-full text-secondary-light mx-auto my-4 lg:my-8 text-sm lg:text-base
+    }
+    .team-dermatologist{
+        @apply max-w-3xl mx-auto bg-gradient-to-br from-blue-light to-blue rounded-3xl md:mt-16 mt-0
+    }
+    .team-img{
+        @apply md:max-w-64 max-w-52 mx-auto md:absolute bottom-0;
+    }
+    .team-vector-left{
+        @apply absolute -z-10 -left-10 -top-10 w-28 hidden lg:block;
+    }
+    .team-vector-right{
+        @apply absolute -z-10 -right-12 -bottom-8 w-28 hidden lg:block;
+    }
+
+    /*=========================================================================== -- Contact-Section -- ===========*/
+
+    .contact-class{
+        @apply container-section
+    }
+    .contact-title{
+        @apply text-center justify-center mx-auto
+    }
+    .contact-p{
+        @apply text-secondary-light w-full lg:max-w-450 mx-auto my-4 lg:my-8 text-sm lg:text-base
+    }
+    .contact-inputs-class{
+        @apply max-w-1000 mx-auto flex flex-col md:flex-row gap-4 items-center justify-center
+    }
+    .contact-span{
+        @apply absolute left-3 top-1/2 -translate-y-1/2 text-blue;
+    }
+    .contact-input{
+        @apply w-full pl-10 pr-4 py-3 rounded-lg border border-blue focus:outline-none focus:ring-blue focus:ring-2;
+    }
+
+    /*=========================================================================== -- Contact-Section -- ===========*/
+
+    .footer-icons{
+        @apply flex flex-col md:flex-row justify-between items-center py-5 gap-4
+    }
+    .footer-icons a{
+        @apply hover:text-primary
+    }
+    .footer-text-class{
+        @apply space-y-2 lg:space-y-5 text-secondary text-sm flex flex-col
+    }
+    .footer-text-class a{
+        @apply hover:text-blue
+    }
+    .footer-h2{
+        @apply text-primary font-semibold text-xl;
+    }
+
+}
